@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "id": "attention-tests",
+      "prompt": "Inspect the attention implementation and add focused tests for mask edge cases. Run only the relevant tests."
+    },
+    {
+      "id": "training-docs",
+      "prompt": "Audit training documentation against the current CLI and report stale commands with file and line references.",
+      "agent": "plan"
+    }
+  ]
+}

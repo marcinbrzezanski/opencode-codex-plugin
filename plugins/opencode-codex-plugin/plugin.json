@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "opencode-codex-plugin",
+  "version": "0.1.0",
+  "description": "Delegate independent Codex work to parallel OpenCode workers in isolated Git worktrees.",
+  "author": {
+    "name": "Marcin Brzezanski"
+  },
+  "homepage": "https://github.com/marcinbrzezanski/opencode-codex-plugin",
+  "repository": "https://github.com/marcinbrzezanski/opencode-codex-plugin",
+  "license": "MIT",
+  "keywords": ["codex", "opencode", "orchestration", "parallel-agents"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "OpenCode Workers",
+        "shortDescription": "Delegate parallel repo tasks to OpenCode workers.",
+        "longDescription": "Use Codex as the parent agent while OpenCode models handle independent research, implementation, and test tasks in isolated Git worktrees.",
+        "developerName": "Marcin Brzezanski",
+        "category": "Developer Tools",
+        "capabilities": ["Read", "Write", "Shell"],
+        "websiteURL": "https://github.com/marcinbrzezanski/opencode-codex-plugin",
+        "defaultPrompt": [
+          "Use OpenCode workers to parallelize the independent parts of this task.",
+          "Ask several OpenCode free models to investigate this bug, then synthesize their findings."
+        ],
+        "brandColor": "#111827"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "opencode-codex",
+  "interface": {
+    "displayName": "Opencode Codex"
+  },
+  "plugins": [
+    {
+      "name": "opencode-codex-plugin",
+      "source": {
+        "source": "local",
+        "path": "./plugins/opencode-codex-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

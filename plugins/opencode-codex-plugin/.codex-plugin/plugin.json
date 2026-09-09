@@ -1,0 +1,18 @@
+{
+  "name": "opencode-codex-plugin",
+  "version": "0.1.0",
+  "description": "Delegate independent Codex work to parallel OpenCode workers in isolated Git worktrees.",
+  "author": {
+    "name": "Marcin Brzezanski"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenCode Workers",
+    "shortDescription": "Delegate parallel repo tasks to OpenCode workers.",
+    "longDescription": "Use Codex as the parent agent while OpenCode models handle independent tasks in isolated Git worktrees.",
+    "developerName": "Marcin Brzezanski",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write", "Shell"],
+    "defaultPrompt": "Use OpenCode workers to parallelize the independent parts of this task."
+  }
+}
